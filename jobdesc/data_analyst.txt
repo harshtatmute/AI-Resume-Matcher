@@ -1,0 +1,17 @@
+Role: Data Analyst
+
+We are looking for a detail-oriented Data Analyst to join our analytics team.
+
+Responsibilities:
+- Analyze large datasets using SQL and Python
+- Build dashboards using Power BI or Tableau
+- Perform data cleaning and preprocessing
+- Create data visualizations to support business decisions
+- Conduct statistical analysis and generate insights
+
+Requirements:
+- Strong knowledge of SQL and Python
+- Experience with Excel and Power BI
+- Understanding of statistics and data analysis techniques
+- Experience in data visualization
+- Good problem-solving skills

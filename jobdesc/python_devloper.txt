@@ -1,0 +1,17 @@
+Role: Python Developer
+
+We are hiring a Python Developer to build scalable backend systems.
+
+Responsibilities:
+- Develop REST APIs using Flask or Django
+- Integrate SQL databases
+- Write clean and efficient Python code
+- Collaborate with frontend and backend teams
+- Maintain version control using Git
+
+Requirements:
+- Strong knowledge of Python
+- Experience with Django or Flask
+- Understanding of REST API development
+- Experience with SQL databases
+- Familiarity with Git

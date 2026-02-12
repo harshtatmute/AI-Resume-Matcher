@@ -1,0 +1,17 @@
+Role: Backend Software Engineer
+
+We are seeking a Backend Engineer to build and maintain server-side applications.
+
+Responsibilities:
+- Develop backend services using Python
+- Design RESTful APIs
+- Work with SQL and NoSQL databases
+- Implement authentication and authorization
+- Optimize application performance
+
+Requirements:
+- Strong experience with Python
+- Experience with Flask or Django
+- Knowledge of SQL databases
+- Familiarity with Docker
+- Understanding of backend architecture
