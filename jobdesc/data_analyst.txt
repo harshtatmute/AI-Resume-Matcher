@@ -1,17 +1,17 @@
-Role: Data Analyst
+Role: Senior Business Data Analyst
 
-We are looking for a detail-oriented Data Analyst to join our analytics team.
+We are seeking a Senior Business Data Analyst to support enterprise analytics initiatives.
 
 Responsibilities:
-- Analyze large datasets using SQL and Python
-- Build dashboards using Power BI or Tableau
-- Perform data cleaning and preprocessing
-- Create data visualizations to support business decisions
-- Conduct statistical analysis and generate insights
+- Develop and maintain BI dashboards and reporting frameworks
+- Perform data analysis using SQL
+- Collaborate with cross-functional teams in Agile environments
+- Define business requirements and translate them into data solutions
+- Support ETL processes and data integration projects
 
 Requirements:
-- Strong knowledge of SQL and Python
-- Experience with Excel and Power BI
-- Understanding of statistics and data analysis techniques
-- Experience in data visualization
-- Good problem-solving skills
+- Strong SQL and data analysis skills
+- Experience with business intelligence tools
+- Knowledge of Agile and Scrum methodologies
+- Experience with JIRA or similar tools
+- Understanding of data integration and reporting systems

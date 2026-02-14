@@ -1,17 +1,17 @@
 Role: Software Engineer
 
-We are looking for a Software Engineer to design and develop high-quality applications.
+We are seeking a Software Engineer to develop scalable and optimized applications.
 
 Responsibilities:
-- Develop scalable software solutions
-- Write clean and maintainable code
-- Participate in system design discussions
-- Debug and optimize applications
-- Work in an agile development environment
+- Develop software applications using Python or C++
+- Optimize database performance (MySQL)
+- Write clean, maintainable, and efficient code
+- Participate in debugging and performance tuning
+- Collaborate in cross-functional development teams
 
 Requirements:
-- Strong programming skills (Python preferred)
+- Strong programming skills in Python or C++
 - Knowledge of data structures and algorithms
-- Experience with version control systems
-- Problem-solving ability
-- Understanding of software development lifecycle
+- Experience with relational databases
+- Ability to analyze and optimize system performance
+- Strong problem-solving skills

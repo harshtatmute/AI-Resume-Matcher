@@ -1,17 +1,17 @@
 Role: Machine Learning Engineer
 
-We are seeking a Machine Learning Engineer to develop and deploy predictive models.
+We are hiring a Machine Learning Engineer to develop and deploy predictive models.
 
 Responsibilities:
-- Build machine learning and deep learning models
-- Work with TensorFlow or PyTorch
-- Perform feature engineering and model evaluation
-- Implement NLP and data preprocessing techniques
-- Deploy ML models to cloud platforms
+- Build and maintain ML pipelines using Python
+- Develop deep learning models using PyTorch or scikit-learn
+- Design ETL pipelines for model training
+- Deploy ML solutions to cloud platforms (Azure preferred)
+- Monitor and improve model performance
 
 Requirements:
-- Strong Python programming skills
-- Experience with Machine Learning and Deep Learning
-- Knowledge of NLP concepts
-- Experience with TensorFlow or PyTorch
-- Cloud deployment experience (AWS preferred)
+- Strong experience in Machine Learning and Deep Learning
+- Proficiency in Python and ML libraries
+- Experience in end-to-end ML lifecycle
+- Knowledge of cloud deployment
+- Strong statistics and algorithm understanding

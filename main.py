@@ -1,3 +1,23 @@
+# Master Skill List
+SKILLS = [
+    "python", "c++", "sql", "mysql", "postgresql", "mongodb",
+    "aws", "azure", "terraform", "ci/cd", "jenkins",
+    "machine learning", "deep learning", "pytorch", "scikit-learn",
+    "etl", "spark", "hadoop", "data analysis",
+    "agile", "scrum", "jira", "api", "rest",
+    "docker", "statistics"
+]
+
+def extract_skills(text):
+    text = text.lower()
+    found_skills = []
+   
+    for skill in SKILLS:
+        if skill in text:
+            found_skills.append(skill)
+    return found_skills
+
+
 # Step 1: Import Libraries
 import os
 from PyPDF2 import PdfReader
@@ -31,8 +51,8 @@ def calculate_similarity(resume_text, job_description_text):
 # Step 5: Main Block Execution
 if __name__ == "__main__":
 
-    resume_path = "resumes/DataBuisnessAnalyst.pdf"
-    jd_path = "jobdesc/software_engineer.txt"
+    resume_path = "resumes/MachineLearning.pdf"
+    jd_path = "jobdesc/ml_engineer.txt"
 
     resume_text = extract_text_from_pdf(resume_path)
     job_description_text = extract_text_from_txt(jd_path)
@@ -40,3 +60,15 @@ if __name__ == "__main__":
     score = calculate_similarity(resume_text, job_description_text)
 
     print(f"\nMatch Score :{round(score * 100, 2)}%")
+
+    resume_skills = extract_skills(resume_text)
+    jd_skills = extract_skills(job_description_text)
+
+    matched_skills = list(set(resume_skills) & set(jd_skills))
+    missing_skills = list(set(jd_skills) - set(resume_skills))
+
+    print("\nMatched Skills:")
+    print(", ".join(matched_skills) if matched_skills else "None")
+
+    print("\nMissing Skills:")
+    print(", ".join(missing_skills) if missing_skills else "None")
