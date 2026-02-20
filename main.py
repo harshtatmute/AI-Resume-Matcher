@@ -19,6 +19,7 @@ def extract_skills(text):
 
 
 # Step 1: Import Libraries
+import re
 import os
 from PyPDF2 import PdfReader
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -41,9 +42,15 @@ def extract_text_from_txt(txt_path):
     with open(txt_path, "r", encoding="utf-8") as file:
         return file.read()
     
+def preprocess_text(text):
+    text = text.lower()
+    text = re.sub(r'[^a-zA-Z0-9\s]', ' ', text)
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
 # step 4: Similarity Function
 def calculate_similarity(resume_text, job_description_text):
-    vectorizer = TfidfVectorizer()
+    vectorizer = TfidfVectorizer(stop_words='english')
     vectors = vectorizer.fit_transform([resume_text,job_description_text])
     similarity = cosine_similarity(vectors[0:1],vectors[1:2])
     return similarity[0][0]
@@ -54,8 +61,8 @@ if __name__ == "__main__":
     resume_path = "resumes/MachineLearning.pdf"
     jd_path = "jobdesc/ml_engineer.txt"
 
-    resume_text = extract_text_from_pdf(resume_path)
-    job_description_text = extract_text_from_txt(jd_path)
+    resume_text = preprocess_text(extract_text_from_pdf(resume_path))
+    job_description_text = preprocess_text(extract_text_from_txt(jd_path))
 
     score = calculate_similarity(resume_text, job_description_text)
 
@@ -64,8 +71,8 @@ if __name__ == "__main__":
     resume_skills = extract_skills(resume_text)
     jd_skills = extract_skills(job_description_text)
 
-    matched_skills = list(set(resume_skills) & set(jd_skills))
-    missing_skills = list(set(jd_skills) - set(resume_skills))
+    matched_skills = sorted(list(set(resume_skills) & set(jd_skills)))
+    missing_skills = sorted(list(set(jd_skills) - set(resume_skills)))
 
     print("\nMatched Skills:")
     print(", ".join(matched_skills) if matched_skills else "None")
