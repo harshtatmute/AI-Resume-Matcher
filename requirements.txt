@@ -1,6 +1,7 @@
+streamlit
 scikit-learn
 numpy
 pandas
 PyPDF2
-streamlit
 sentence-transformers
+torch==2.2.2
