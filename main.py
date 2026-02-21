@@ -23,8 +23,10 @@ import re
 import os
 from PyPDF2 import PdfReader
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Step 2: Function to Extract Text from PDF
 def extract_text_from_pdf(pdf_path):
@@ -50,10 +52,15 @@ def preprocess_text(text):
 
 # step 4: Similarity Function
 def calculate_similarity(resume_text, job_description_text):
-    vectorizer = TfidfVectorizer(stop_words='english')
-    vectors = vectorizer.fit_transform([resume_text,job_description_text])
-    similarity = cosine_similarity(vectors[0:1],vectors[1:2])
-    return similarity[0][0]
+    resume_embedding = model.encode(resume_text)
+    jd_embedding = model.encode(job_description_text)
+
+    similarity = cosine_similarity(
+        [resume_embedding],
+        [jd_embedding]
+    )[0][0]
+
+    return similarity
 
 # Step 5: Main Block Execution
 if __name__ == "__main__":

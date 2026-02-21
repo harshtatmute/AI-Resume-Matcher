@@ -3,3 +3,4 @@ numpy
 pandas
 PyPDF2
 streamlit
+sentence-transformers
